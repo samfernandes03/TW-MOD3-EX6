@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: row;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -8,13 +10,23 @@ body {
 
 .outer-col-1 {
     background: lightgray;
+    flex: 1;
 }
 
-.outer-col-2 {}
+.outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
 
-.inner-row {}
+.inner-row {
+    display: flex;
+    flex-direction: row;
+}
 
-.inner-col {}
+.inner-col {
+    flex: 4;
+}
 
 .inner-row article {
     min-height: 60vh;
@@ -22,6 +34,7 @@ body {
 
 .inner-row aside {
     background: lightgreen;
+    flex: 1;
 }
 
 header,
