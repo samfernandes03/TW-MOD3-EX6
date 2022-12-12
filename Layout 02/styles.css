@@ -8,17 +8,14 @@ body {
     min-height: 100vh;
 }
 
-body {
-    display: flex;
-}
-
 .col-1 {
     background: lightgray;
+    flex: 1;
 }
 
 .col-2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex: 5;
 }
 
@@ -28,17 +25,27 @@ body {
 }
 
 .content>article {
+    flex: 3;
     min-height: 60vh;
 }
 
 .content>aside {
     background: lightgreen;
+    flex: 1;
 }
 
 header,
 footer {
     background: lightblue;
     height: 20vh;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1em;
 }
 
 header,
