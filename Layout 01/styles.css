@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -6,9 +8,15 @@ body {
     min-height: 100vh;
 }
 
-#main {}
+#main {
+    display: flex;
+    flex-grow: 1;
+}
 
-#main>article {}
+#main>article {
+    flex: 1;
+    order: 1;
+}
 
 #main>nav,
 #main>aside {
@@ -17,10 +25,12 @@ body {
 
 #main>nav {
     background: lightgray;
+    order: -1;
 }
 
 #main>aside {
     background: lightgreen;
+    order: 2;
 }
 
 header,
